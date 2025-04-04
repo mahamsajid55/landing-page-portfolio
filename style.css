@@ -1,0 +1,145 @@
+/* Basic Navbar Styling */
+.navbar {
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   background-color: #111;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect on links */
+  .nav-links li a:hover {
+  color: #f39c12;
+  }
+  
+  .menu-toggle{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #222; 
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 15px;
+      width: 200px;
+      border-radius: 5px;
+    }
+  
+  /* Nav Links Shown when active*/
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  
+  /* Moblile: show hamburger menu */
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+
+
+/* hero section syling*/
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+}
+
+.hero-text p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.cta-btn{
+    background-color: #f39c12;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* about section*/
+.about{
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about h2{
+    font-size:  2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+.scroll-to-top.show{
+    display: block;
+}
